@@ -59,10 +59,12 @@ criptografa.addEventListener("click", function codifica ()
       
       fraseCripto = "Por favor não utilizar letras maiúsculas, acentos ou caracteres especiais!";
       saida.value = fraseCripto;
+      saida.classList.add("erro");
       setTimeout(() =>{
+        saida.classList.remove("erro");
         fraseCripto = "";
         saida.value = fraseCripto;
-      }, 1000)
+      }, 2000)
       break;
       
     }
