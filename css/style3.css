@@ -1,0 +1,1448 @@
+:root{
+	/* --- apenas um teste de variaveis para estudo --- */
+	--cor-parte-superior: linear-gradient(90deg,rgb(11, 11, 174),blue);
+	--cor-principal: darkgrey;
+	--cor-detalhe-escuro: rgb(35, 35, 35);
+	--cor-detalhe-escuro2:rgb(115, 115, 115);
+	--cor-detalhe-escuro3: rgb(159, 159, 159);
+	--cor-detalhe-claro2: rgb(207, 207, 207);
+	--cor-detalhe-claro: white;
+	--cor-letra: green;
+	--preto: rgb(0, 0, 0);
+	box-sizing: border-box;
+}	
+
+body
+{
+	background: radial-gradient(rgb(255, 229, 158),rgb(255, 225, 143),rgb(253, 222, 137), rgb(206, 178, 101));
+}
+
+/* ---- estilos do header --- */
+.caixaheader
+{
+	position: relative;
+	
+	background: linear-gradient(45deg, rgb(255, 204, 74),rgb(255, 204, 74) 20%, rgb(255, 219, 129) , rgb(253, 238, 204),rgb(255, 204, 74) 50%,rgb(255, 204, 74) 60%, rgb(255, 248, 230) 70%, rgb(255, 204, 74) 80%);
+	width: 500px;
+	margin-left: 720px;
+	margin-bottom: 8px;
+	padding: 20px 0;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 1px -1px 1px 1px rgb(255, 237, 192), -1px 1px 1px 1px rgb(105, 83, 28), inset 1px -1px 0 1px rgb(185, 148, 55), inset -1px 1px 0 1px rgb(254, 223, 143);
+	animation-name: fundo;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+.caixaheader::after
+{
+	top:10px;
+	right: 10px;
+	position: absolute;
+	content: "+";
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	
+	background: rgb(234, 205, 124);
+	width: 20px;
+	
+	border-radius: 50%;
+	border: 1px solid rgb(130, 104, 38);
+	box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+}
+.caixaheader::before
+{
+	bottom: 10px;
+	right: 10px;
+	position: absolute;
+	content: "+";
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	
+	background: rgb(232, 199, 111);
+	width: 20px;
+	
+	border-radius: 50%;
+	border: 1px solid rgb(130, 104, 38);
+	box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+}
+.caixaheader2::after
+{
+	bottom: 10px;
+	left: 10px;
+	position: absolute;
+	content: "+";
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	
+	background: rgb(209, 175, 83);
+	width: 20px;
+	
+	border-radius: 50%;
+	border: 1px solid rgb(130, 104, 38);
+	box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+}
+.caixaheader2::before
+{
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	content: "+";
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	
+	background: rgb(235, 199, 90);
+	width: 20px;
+	
+	border-radius: 50%;
+	border: 1px solid rgb(130, 104, 38);
+	box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+}
+.titulo-header
+{
+
+	
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	-ms-background-clip: text;
+	color: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Righteous', cursive;
+	margin: 0;
+	text-shadow:  -2px 2px 2px rgb(121, 96, 32), 0px -2px  1px rgb(249, 224, 161)
+	
+	
+}
+.titulo-header2
+{
+	top: 20px;
+	right: 40.3px;
+	position: absolute;
+	background: rgb(255, 204, 74);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	-ms-background-clip: text;
+	color: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Righteous', cursive;
+	margin: 0;
+	
+	
+}
+main
+{
+	display: inline-flex;
+}
+.dialogo
+{
+	
+	top: 100px;
+	right: -1600px;
+	border: none;
+	background: none;
+	position: absolute;
+	z-index: 3;
+	height: 30px;
+	transform: rotate(90deg);
+	animation: dialog 1s ease-in-out infinite;
+}
+.dialogo-semDisplay
+{
+	display: none;
+}
+.dialogo-escrita
+{
+	font-size: 200px;
+	color: rgb(219, 108, 16);
+	margin: 0;
+	height: 20px;
+	
+}
+
+/* --- estilos dos botões que alteram a cor (bloco esquerdo) --- */
+
+.btn
+{
+	
+	display: inline-block;
+	
+	width: 580px;
+	height: 740px;
+}
+.fundo-botao
+{
+	border-radius: 15px;
+	margin: 5% 15% 5% 15%;
+	background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+	box-shadow: 1px -1px 1px 1px rgb(236, 197, 100), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(189, 149, 47);
+	width: 70%;
+	height: 90%;
+	display: inline-block;
+}
+.botao-1, .botao-2, .botao-3, .botao-4
+{
+	
+	margin: 10% 5% 5% 5%;
+	background: radial-gradient(rgb(166, 119, 16),rgb(87, 62, 9));
+	box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(74, 55, 2), inset -1px 1px 0 1px rgb(74, 55, 2);
+	width: 90%;
+	height: 15%;
+	border-radius: 50px;
+	
+}
+.botao-1-interno, .botao-2-interno, .botao-3-interno, .botao-4-interno
+{
+	
+	border-radius: 50px;
+	width: 50%;
+	height: 96%;
+	margin-top: 2px;
+	display: inline-block;
+	background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+	box-shadow: 1px -1px 1px 1px rgb(180, 143, 49), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(160, 124, 34);
+}
+.botao-1-interno:hover, .botao-2-interno:hover, .botao-3-interno:hover, .botao-4-interno:hover
+{
+	
+	cursor: pointer;
+}
+.botao-1-detalhe, .botao-2-detalhe, .botao-3-detalhe, .botao-4-detalhe
+{
+	
+	background: rgb(128, 96, 0);
+	width: 50%;
+	height: 70%;
+	border-radius: 50px;
+	margin: 5% 15% 5% 25%;
+	display: inline-block;
+	box-shadow: 1px -1px 1px 1px rgb(180, 143, 49), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(160, 124, 34);
+}
+.on-off
+{
+	margin-left: 10%;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgb(128, 96, 0);
+	text-shadow: -1px 1px rgb(85, 64, 1), 1px -1px rgb(140, 111, 23);
+	text-transform: uppercase;
+	font-family: 'Righteous', cursive;
+}
+
+/* --- estilo do monitor (bloco central) ---  */
+
+.caixamaior2
+{
+	display: inline-block;
+	
+	width: 768px;
+	height: 740px;
+	border: 1px solid rgb(205, 205, 138);
+	border-radius: 5px ;
+	background: linear-gradient(45deg,rgba(255, 246, 191,0) 40%,rgb(253, 241, 169) 10%, rgba(96, 88, 30) 50%), linear-gradient(-45deg, rgb(255, 246, 191) 48%,rgb(255, 255, 255) 52%,rgba(255, 246, 191) 48%), linear-gradient(-45deg, rgb(96, 88, 30), rgb(167, 157, 82), rgb(96, 88, 30));
+}
+.caixamaior
+{
+	position: relative;
+	background: radial-gradient(rgb(28, 200, 234) ,rgb(28, 200, 234) , rgb(26, 154, 180),rgb(17, 122, 143) );
+	margin: 50px auto auto auto ;
+	border-radius: 30px;
+	width: 85%;
+	height: 85%;
+	border: 1px solid rgb(70, 69, 69);
+	
+}
+.telapreta
+{
+	word-wrap:break-word;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(rgb(31, 31, 31), rgb(0, 0, 0));
+	z-index: 2;
+	color: white;
+	cursor: progress;
+}
+#escrita
+{
+	margin: 40px;
+	color: green;
+	line-height: 40px;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px darkgreen;
+
+}
+.caixa
+{
+
+	margin-left: 14%;
+	
+}
+.container
+{
+	margin-top: 8%;
+	background: var(--cor-principal);
+	width: 300px;
+	height: 300px;
+	display: inline-flex;
+	border-top: 1px solid var(--cor-detalhe-claro);
+	border-left: 1px solid var(--cor-detalhe-claro);
+	border-bottom: 1px solid var(	--cor-detalhe-escuro2);
+	border-right: 1px solid var(	--cor-detalhe-escuro2);
+	box-shadow:-0.3px -0.3px 0 1px var(--cor-principal), 0.7px 0.7px 0 1px var(--cor-detalhe-escuro), inset 0.5px 0.5px 0 0px var(	--cor-detalhe-escuro2);
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.item:active, .item1:active, .item2:active, #descriptografa:active, #criptografa:active, #copiar:active
+{
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-escuro);
+	border-left: 0.5px solid var(--cor-detalhe-escuro);
+	border-bottom: 0.5px solid var(--cor-detalhe-claro);
+	border-right: 0.5px solid var(--cor-detalhe-claro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+
+}
+.item:hover, .item1:hover, .item2:hover, #descriptografa:hover, #criptografa:hover, #copiar:hover
+{
+	cursor: pointer;
+
+}
+.item, .item1
+{
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-claro);
+	border-left: 0.5px solid var(--cor-detalhe-claro);
+	border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+	border-right: 0.5px solid var(--cor-detalhe-escuro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	margin: auto 2px auto 0px; 
+	width: 5%;
+	height: 65%;
+	
+}
+.titulo
+{
+
+	position: relative;
+	left: -55%;
+	bottom: 90%;
+	font-size: 1.2em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+.titulo2
+{
+	position: relative;
+	left: -49%;
+	bottom: 90%;
+	font-size: 1.2em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+
+}
+.item1
+{
+	background: var(--cor-principal);
+	
+	width: 5%;
+	height: 65%;
+	
+
+}
+.item2
+{
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-claro);
+	border-left: 0.5px solid var(--cor-detalhe-claro);
+	border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+	border-right: 0.5px solid var(--cor-detalhe-escuro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	margin: auto 3px auto 0px; 
+	width: 5%;
+	height: 65%;
+	
+
+}
+
+.item3
+{
+	margin:3px 3px; 
+	display: flex;
+	width: 98%;
+	height: 8%;
+	border: 1px solid var(--cor-detalhe-escuro3);
+	background: var(--cor-parte-superior);
+	flex-direction: row-reverse;
+}
+.item4
+{
+	background: var(--preto);
+	margin: 0 auto 8px auto;
+	width: 282px;
+	height: 260px;
+	border-top: 1px solid var(--cor-detalhe-escuro);
+	border-right: 1px solid var(--cor-principal);
+	border-bottom: 1px solid var(--cor-principal);
+	border-left: 1px solid var(--cor-detalhe-escuro);
+	
+	box-shadow: 1px 1px 0 0 var(--cor-detalhe-claro), -0.3px -0.3px 0 0.5px var(	--cor-detalhe-escuro2);
+	
+}
+#entrada
+{
+	margin: 2px 5px 0 5px;
+	border: none;
+	background: none;
+	color: var(--cor-letra);
+	width: 95%;
+	height: 90%;
+	resize: none;
+	
+}
+#entrada:focus, #saida:focus
+{
+	outline: none;
+	border: none;
+}
+#criptografa
+{
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-claro);
+	border-left: 0.5px solid var(--cor-detalhe-claro);
+	border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+	border-right: 0.5px solid var(--cor-detalhe-escuro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	position: relative;
+	display: inline-block;
+	top: 90px;
+	left: 70px;
+	padding:20px 20px 20px 20px;
+	text-transform: uppercase;
+}
+.caixa1
+{
+	margin-left: 25%;
+	margin-top: -50px;
+	position: relative;
+	z-index: 1;
+	
+	
+	
+}
+
+#descriptografa
+{
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-claro);
+	border-left: 0.5px solid var(--cor-detalhe-claro);
+	border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+	border-right: 0.5px solid var(--cor-detalhe-escuro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	position: relative;
+	display: inline-block;
+	top: 150px;
+	right: 60px;
+	padding:20px 5px 20px 5px;
+	text-transform: uppercase;
+
+
+}
+.container2
+{
+
+	background: var(--cor-principal);
+	width: 300px;
+	height: 300px;
+	display: inline-flex;
+	border-top: 1px solid var(--cor-detalhe-claro);
+	border-left: 1px solid var(--cor-detalhe-claro);
+	border-bottom: 1px solid var(	--cor-detalhe-escuro2);
+	border-right: 1px solid var(	--cor-detalhe-escuro2);
+	box-shadow:-0.3px -0.3px 0 1px var(--cor-principal), 0.7px 0.7px 0 1px var(--cor-detalhe-escuro), inset 0.5px 0.5px 0 0px var(	--cor-detalhe-escuro2);
+	flex-direction: column;
+	justify-content: center;
+	
+}
+#saida
+{
+	margin: 2px 5px 0 5px;
+	border: none;
+	background: none;
+	color: var(--cor-letra);
+	width: 95%;
+	height: 80%;
+	resize: none;
+
+}
+
+#copiar
+{
+
+	margin-left: 80%;
+	margin-top: 5%;
+	background: var(--cor-principal);
+	border-top: 0.5px solid var(--cor-detalhe-claro);
+	border-left: 0.5px solid var(--cor-detalhe-claro);
+	border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+	border-right: 0.5px solid var(--cor-detalhe-escuro);
+	box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+
+
+}
+
+/* --- estilos da alavanca (bloco da direita) ---  */
+.alavanca
+{
+	position: relative;
+	display: inline-block;
+	width: 560px;
+	height: 740px;
+	
+}
+
+.cabo
+{
+	border-radius: 15px;
+	position: absolute;
+	width: 85%;
+	height: 15%;
+	background: linear-gradient(rgb(149, 98, 3),rgb(162, 109, 10),rgb(184, 119, 0) 30%,rgb(218, 150, 23),rgb(202, 142, 29), rgb(184, 119, 0),rgb(184, 119, 0), rgb(140, 91, 1));
+	top: 12%;
+	left: 4%;
+	box-shadow: -1.5px 1.5px 0px 1px rgb(98, 64, 1), 1.5px -1.5px 1px rgb(134, 88, 3),inset -1.5px 1.5px 1px rgb(118, 77, 2);
+}
+.caboEscrita
+{
+	display: none;
+}
+.cabo:hover
+{
+	cursor: pointer;
+}
+.alavanca2
+{
+	border-radius: 30px;
+	margin: 7%;
+	width: 79%;
+	height: 90%;
+	background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+	box-shadow: 1px -1px 1px 1px rgb(236, 197, 100), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(189, 149, 47);
+}
+.buraco
+{
+	border-radius: 40px;
+	margin-top: 10%;
+	margin-left: 20%;
+	display: inline-block;
+	height: 88%;
+	width: 20%;
+	background: radial-gradient(rgb(4, 4, 4), rgb(63, 63, 63));
+	box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(49, 36, 1), inset -1px 1px 0 1px rgb(49, 36, 1);
+}
+.buraco2
+{
+	border-radius: 40px;
+	margin-left: 20%;
+	display: inline-block;
+	height: 88%;
+	width: 20%;
+	background: radial-gradient(rgb(4, 4, 4), rgb(63, 63, 63));
+	box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(49, 36, 1), inset -1px 1px 0 1px rgb(49, 36, 1);
+}
+
+.cabo2
+{
+
+
+	top: 75%;
+	animation-name: cabo;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+/* --- essa é a sessão de classes criadas diretamente no css -- */
+
+
+.move-botao
+{
+	margin-left: 50%;
+}
+
+.escritaFadeOut
+{
+	display: none;
+	transition: 0.5s;
+}
+
+.telapreta2{
+	background: rgba(0, 0, 0, 0);
+	animation: telapreta 0.5s ease-in-out 1;
+	
+}
+
+.fundo-corDiferente
+{
+	background: radial-gradient(rgb(202, 33, 33) ,rgb(189, 18, 195) , rgb(83, 10, 136),rgb(8, 6, 1) );
+}
+.corJanela-diferente
+{
+	--cor-parte-superior: linear-gradient(90deg,rgb(69, 249, 20),rgb(92, 128, 6));
+	--cor-principal: rgb(173, 219, 129);
+	--cor-detalhe-escuro: rgb(59, 65, 48);
+	--cor-detalhe-escuro2:rgb(112, 125, 92);
+	--cor-detalhe-escuro3: rgb(159, 159, 159);
+	--cor-detalhe-claro2: rgb(232, 255, 205);
+	--cor-detalhe-claro: rgb(168, 255, 155);
+	--cor-letra: rgb(128, 0, 0);
+	--preto: rgb(93, 232, 195);
+	
+}
+
+
+textarea {
+	line-height: 1.2;
+	font-size: 18px;
+	text-decoration: none;
+}
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 248, 248);
+	
+}
+
+
+.move-fundo{
+	animation: colorido 5s ease-in-out infinite;
+}
+.roda
+{
+	border-radius: 100px;
+	animation: roda 5s ease-in-out infinite;
+}
+.treme
+{
+
+animation: treme 1s ease-in-out 1;
+}
+
+/* ---- essa é a sessão responsavel pelas animações ---- */
+
+@keyframes dialog
+{
+	0% {
+		top: 100px;
+	}
+	50%{
+		top: 50px;
+	}
+	100% {
+		top: 100px;
+	}
+}
+@keyframes fundo 
+{
+
+0% {
+	background-position-x: 0px;
+}
+
+50% {
+	background-position-x: 300px;
+}
+
+100% {
+		background-position-x: 500px;
+}
+	
+	
+
+}
+@keyframes cabo 
+{
+	0% {
+		top: 12%;
+	}
+	100% {
+		top: 75%;
+	}
+}
+@keyframes telapreta 
+{
+	0% { background: rgba(0, 0, 0, 1);}
+
+	100% {background: rgba(0, 0, 0, 0);}
+}
+@keyframes roda
+{
+ 0%{
+	 transform: rotate(0deg);
+ }
+ 25%{
+	 transform: rotate(100deg);
+ }
+50%{
+	transform: rotate(200deg);
+}
+75%{
+	transform: rotate(300deg);
+}
+100% {
+	transform: rotate(360deg);
+}
+}
+@keyframes colorido
+{
+
+	0%{
+		background: radial-gradient(rgb(202, 33, 33) ,rgb(189, 18, 195) , rgb(83, 10, 136),rgb(8, 6, 1) );
+	}
+	25%{
+		background: radial-gradient(rgb(114, 8, 8) ,rgb(100, 8, 104) , rgrgb(48, 3, 80)gb(8, 6, 1) );
+	}
+ 50%{
+	background: radial-gradient(rgb(240, 83, 83) ,rgb(249, 85, 255) , rgb(187, 92, 255),rgb(8, 6, 1) );
+ }
+ 75%{
+	background: radial-gradient(rgb(255, 168, 168) ,rgb(252, 167, 255) , rgb(221, 173, 255),rgb(8, 6, 1) );
+ }
+ 100% {
+	background: radial-gradient(rgb(202, 33, 33) ,rgb(189, 18, 195) , rgb(83, 10, 136),rgb(8, 6, 1) );
+ }
+}
+
+@keyframes treme
+{
+	0% {
+		transform: rotate(50deg);
+	}
+	50%{
+		transform: rotate(-100deg);
+	}
+	100%{
+		transform: rotate(50deg);
+	}
+
+}
+
+
+/* ------ aqui começa o codigo de responsividade para celular ---- */
+
+
+@media screen and (max-width: 480px)
+{
+	body
+	{
+		overflow: hidden;
+		background: radial-gradient(rgb(255, 255, 158),rgb(255, 225, 143),rgb(253, 222, 137), rgb(206, 178, 101));
+		margin: 0;
+		
+	}
+	
+	main
+	{
+		overflow: hidden;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.caixaheader
+	{
+		position: default;
+		
+	
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding: 20px 0;
+		border-radius: 0px;
+		text-align: center;
+		font-size: 25px;
+		box-shadow: 1px -1px 1px 1px rgb(255, 237, 192), -1px 1px 1px 1px rgb(105, 83, 28), inset 1px -1px 0 1px rgb(185, 148, 55), inset -1px 1px 0 1px rgb(254, 223, 143);
+		animation-name: fundo;
+		animation-duration: 4s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	
+	}
+	
+	.caixaheader::after
+	{
+		top:10px;
+		right: 10px;
+		position: absolute;
+		content: "+";
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.3);
+		font-size: 15px;
+		
+		background: rgb(234, 205, 124);
+		width: 20px;
+		
+		border-radius: 50%;
+		border: 1px solid rgb(130, 104, 38);
+		box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+	}
+	.caixaheader::before
+	{
+		bottom: 10px;
+		right: 10px;
+		position: absolute;
+		content: "+";
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.3);
+		font-size: 15px;
+		
+		background: rgb(232, 199, 111);
+		width: 20px;
+		
+		border-radius: 50%;
+		border: 1px solid rgb(130, 104, 38);
+		box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+	}
+	.caixaheader2::after
+	{
+		bottom: 10px;
+		left: 10px;
+		position: absolute;
+		content: "+";
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.3);
+		font-size: 15px;
+		
+		background: rgb(209, 175, 83);
+		width: 20px;
+		
+		border-radius: 50%;
+		border: 1px solid rgb(130, 104, 38);
+		box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+	}
+	.caixaheader2::before
+	{
+		top: 10px;
+		left: 10px;
+		position: absolute;
+		content: "+";
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.3);
+		font-size: 15px;
+		
+		background: rgb(235, 199, 90);
+		width: 20px;
+		
+		border-radius: 50%;
+		border: 1px solid rgb(130, 104, 38);
+		box-shadow: 1px -1px  rgb(255, 237, 192), -1px 1px  rgb(105, 83, 28), inset 1px -1px  rgb(185, 148, 55), inset -1px 1px  rgb(254, 223, 143);
+	}
+	.titulo-header
+	{
+	
+		
+		-webkit-background-clip: text;
+		color: rgb(255, 204, 74);
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Righteous', cursive;
+		margin: 0;
+		text-shadow:  -2px 2px 2px rgb(121, 96, 32), 0px -2px  1px rgb(249, 224, 161)
+		
+		
+	}
+	.titulo-header2
+	{
+		display: none;
+		top: 20px;
+		right: 40.3px;
+		position: absolute;
+		background: rgb(255, 204, 74);
+		-webkit-background-clip: text;
+		color: transparent;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Righteous', cursive;
+		margin: 0;
+		
+		
+	}
+	.dialogo
+	{
+		left: -200px;
+		top: 40px;
+		right: 0px;
+		border: none;
+		background: none;
+		position: absolute;
+		z-index: 3;
+		height: 30px;
+		transform: rotate(360deg);
+		animation: dialog 1s ease-in-out infinite;
+	}
+	.dialogo-semDisplay
+	{
+		display: none;
+	}
+	.dialogo-escrita
+	{
+		
+		font-size: 100px;
+		color: rgb(219, 108, 16);
+		margin: 0;
+		height: 20px;
+		
+	}
+	.btn
+	{
+		order: 1;
+		display: block;
+		
+		width: 100%;
+		height: 60px;
+	}
+	.fundo-botao
+	{
+		border-radius: 0px;
+		margin: 0;
+		background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+		box-shadow: 1px -1px 1px 1px rgb(236, 197, 100), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(189, 149, 47);
+		width: 100%;
+		height: 60px;
+		display: inline-block;
+	}
+	.botao-3, .botao-4
+	{
+		
+		margin: 2px 0px 10px 15px;
+		background: radial-gradient(rgb(166, 119, 16),rgb(87, 62, 9));
+		box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(74, 55, 2), inset -1px 1px 0 1px rgb(74, 55, 2);
+		width: 40%;
+		height: 30%;
+		border-radius: 50px;
+		display: inline-block;
+		
+	}
+	.botao-1, .botao-2
+	{
+		margin: 5px 0px 10px 15px;
+		background: radial-gradient(rgb(166, 119, 16),rgb(87, 62, 9));
+		box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(74, 55, 2), inset -1px 1px 0 1px rgb(74, 55, 2);
+		width: 40%;
+		height: 30%;
+		border-radius: 50px;
+		display: inline-block;
+		
+	}
+	.botao-1-interno, .botao-2-interno, .botao-3-interno, .botao-4-interno
+	{
+		
+		border-radius: 50px;
+		width: 50%;
+		height: 96%;
+		margin-top: 2px;
+		display: inline-block;
+		background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+		box-shadow: 1px -1px 1px 1px rgb(180, 143, 49), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(160, 124, 34);
+		animation: mexeBotao 1s ease-in-out infinite;
+	}
+	.botao-1-interno:hover, .botao-2-interno:hover, .botao-3-interno:hover, .botao-4-interno:hover
+	{
+		
+		cursor: pointer;
+	}
+	.botao-1-detalhe, .botao-2-detalhe, .botao-3-detalhe, .botao-4-detalhe
+	{
+		
+		background: rgb(128, 96, 0);
+		width: 50%;
+		height: 70%;
+		border-radius: 50px;
+		margin: 0 0 10px 0;
+		display: inline-block;
+		box-shadow: 1px -1px 1px 1px rgb(180, 143, 49), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(160, 124, 34);
+	}
+	.on-off
+	{
+		display: none;
+		margin-left: 10%;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgb(128, 96, 0);
+		text-shadow: -1px 1px rgb(85, 64, 1), 1px -1px rgb(140, 111, 23);
+		text-transform: uppercase;
+		font-family: 'Righteous', cursive;
+	}
+	.move-botao
+	{
+		margin-left: 50%;
+		animation: none;
+	}
+	.caixamaior2
+	{
+		margin-top: 10px;
+		display: block;
+		order: 2;
+		width: 100%;
+		height: 520px;
+		border: 1px solid rgb(205, 205, 138);
+		border-radius: 5px ;
+		background: linear-gradient(45deg,rgba(255, 246, 191,0) 40%,rgb(253, 241, 169) 10%, rgba(96, 88, 30) 50%), linear-gradient(-45deg, rgb(255, 246, 191) 48%,rgb(255, 255, 255) 52%,rgba(255, 246, 191) 48%), linear-gradient(-45deg, rgb(96, 88, 30), rgb(167, 157, 82), rgb(96, 88, 30));
+	}
+	.caixamaior
+	{
+		position: relative;
+		background: radial-gradient(rgb(28, 200, 234) ,rgb(28, 200, 234) , rgb(26, 154, 180),rgb(17, 122, 143) );
+		margin: 50px auto auto auto ;
+		border-radius: 30px;
+		width: 380px;
+		height: 80%;
+		border: 1px solid rgb(70, 69, 69);
+		
+	}
+	.telapreta
+	{
+		
+		word-wrap:break-word;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(rgb(31, 31, 31), rgb(0, 0, 0));
+		z-index: 2;
+		color: white;
+		cursor: progress;
+	}
+	.telapreta2{
+		background: rgba(0, 0, 0, 0);
+		animation: telapreta 0.5s ease-in-out 1;
+		
+	}
+	#escrita
+	{
+		margin: 10px;
+		color: green;
+		line-height: 10px;
+		font-size: 10px;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px darkgreen;
+	
+	}
+	.escritaFadeOut
+	{
+		display: none;
+		transition: 0.5s;
+	}
+	.caixa
+	{
+		
+		display: block;
+		width: 400px;
+		margin-top: 20px;
+		
+	}
+	.container
+	{
+		margin-top: 0;
+		background: var(--cor-principal);
+		width: 200px;
+		height: 200px;
+		display: inline-flex;
+		border-top: 1px solid var(--cor-detalhe-claro);
+		border-left: 1px solid var(--cor-detalhe-claro);
+		border-bottom: 1px solid var(	--cor-detalhe-escuro2);
+		border-right: 1px solid var(	--cor-detalhe-escuro2);
+		box-shadow:-0.3px -0.3px 0 1px var(--cor-principal), 0.7px 0.7px 0 1px var(--cor-detalhe-escuro), inset 0.5px 0.5px 0 0px var(	--cor-detalhe-escuro2);
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	.item:active, .item1:active, .item2:active, #descriptografa:active, #criptografa:active, #copiar:active
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-escuro);
+		border-left: 0.5px solid var(--cor-detalhe-escuro);
+		border-bottom: 0.5px solid var(--cor-detalhe-claro);
+		border-right: 0.5px solid var(--cor-detalhe-claro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	
+	}
+	.item:hover, .item1:hover, .item2:hover, #descriptografa:hover, #criptografa:hover, #copiar:hover
+	{
+		cursor: pointer;
+	
+	}
+	.item, .item1
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		margin: auto 2px auto 0px; 
+		width: 5%;
+		height: 65%;
+		
+	}
+	.item1
+	{
+		background: var(--cor-principal);
+		
+		width: 5%;
+		height: 65%;
+		
+	
+	}
+	.titulo
+	{
+	
+		position: relative;
+		left: -48%;
+		bottom: 120%;
+		font-size: 1em;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: white;
+	}
+	.titulo2
+	{
+		position: relative;
+		left: -40%;
+		bottom: 120%;
+		font-size: 1em;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: white;
+	
+	}
+	.item2
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		margin: auto 3px auto 0px; 
+		width: 5%;
+		height: 65%;
+		
+	
+	}
+	
+	.item3
+	{
+		margin:3px 3px; 
+		display: flex;
+		width: 98%;
+		height: 8%;
+		border: 1px solid var(--cor-detalhe-escuro3);
+		background: var(--cor-parte-superior);
+		flex-direction: row-reverse;
+	}
+	.item4
+	{
+		background: var(--preto);
+		margin: 0 auto 8px auto;
+		width: 180px;
+		height: 260px;
+		border-top: 1px solid var(--cor-detalhe-escuro);
+		border-right: 1px solid var(--cor-principal);
+		border-bottom: 1px solid var(--cor-principal);
+		border-left: 1px solid var(--cor-detalhe-escuro);
+		
+		box-shadow: 1px 1px 0 0 var(--cor-detalhe-claro), -0.3px -0.3px 0 0.5px var(	--cor-detalhe-escuro2);
+		
+	}
+	#entrada
+	{
+		margin: 2px 5px 0 5px;
+		border: none;
+		background: none;
+		color: var(--cor-letra);
+		width: 95%;
+		height: 90%;
+		resize: none;
+		
+	}
+	#entrada:focus, #saida:focus
+	{
+		outline: none;
+		border: none;
+	}
+	#criptografa
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		position: static;
+		display: inline-block;
+		top: 0;
+		left: 0;
+		vertical-align: -60px;
+		padding:5px;
+		text-transform: uppercase;
+	}
+	.caixa1
+	{
+		display: block;
+		margin-left: 10px;
+		margin-top: -20px;
+		position: relative;
+		z-index: 1;
+		
+		
+		
+	}
+	#descriptografa
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		position: static;
+		vertical-align: -100px;
+		display: inline-block;
+		padding:5px;
+		text-transform: uppercase;
+		height: 30px;
+	
+	}
+	
+	.container2
+	{
+	
+		background: var(--cor-principal);
+		width: 200px;
+		height: 200px;
+		display: inline-flex;
+		border-top: 1px solid var(--cor-detalhe-claro);
+		border-left: 1px solid var(--cor-detalhe-claro);
+		border-bottom: 1px solid var(	--cor-detalhe-escuro2);
+		border-right: 1px solid var(	--cor-detalhe-escuro2);
+		box-shadow:-0.3px -0.3px 0 1px var(--cor-principal), 0.7px 0.7px 0 1px var(--cor-detalhe-escuro), inset 0.5px 0.5px 0 0px var(	--cor-detalhe-escuro2);
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	#saida
+	{
+		margin: 2px 5px 0 5px;
+		border: none;
+		background: none;
+		color: var(--cor-letra);
+		width: 95%;
+		height: 80%;
+		resize: none;
+	
+	}
+	
+	
+	#copiar
+	{
+	
+		margin-left: 70%;
+		margin-top: 0;
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+	
+	
+	}
+	
+	.alavanca
+	{
+		order: 3;
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 50px;
+		
+		
+	}
+	
+	.cabo
+	{
+		margin-left: 30%;
+		margin-top: 5px;
+		
+		border-radius: 0;
+		position: absolute;
+		width: 40%;
+		height: 100%;
+		background: rgb(255, 166, 98);
+		border-top: 0.5px solid var(--cor-detalhe-claro);
+		border-left: 0.5px solid var(--cor-detalhe-claro);
+		border-bottom: 0.5px solid var(--cor-detalhe-escuro);
+		border-right: 0.5px solid var(--cor-detalhe-escuro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		top: 0;
+		left: 0%;
+		
+		
+	}
+	.caboEscrita
+	{
+		display: inline-block;
+		color: rgb(255, 166, 98);
+		text-transform: uppercase;
+	
+		font-family: 'Righteous', cursive;
+		margin: 8% 30% 0 30%;
+		font-size: 20px;
+		
+		text-shadow:  -2px 2px 2px rgb(162, 105, 62), 0px -2px  1px rgb(255, 199, 157)
+	}
+	.cabo:active
+	{
+		background: var(--cor-principal);
+		border-top: 0.5px solid var(--cor-detalhe-escuro);
+		border-left: 0.5px solid var(--cor-detalhe-escuro);
+		border-bottom: 0.5px solid var(--cor-detalhe-claro);
+		border-right: 0.5px solid var(--cor-detalhe-claro);
+		box-shadow: inset 1px 1px 0 0 var(--cor-detalhe-claro2), inset -1px -1px 0 0 var(	--cor-detalhe-escuro2);
+		width: 42%;
+		
+	}
+	.cabo:hover
+	{
+		cursor: pointer;
+	}
+	.cabo2
+	{
+	
+		
+		top: 0;
+		animation-name: sscabo;
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+	}
+	
+	
+	.alavanca2
+	{
+		display: none;
+		border-radius: 30px;
+		margin: 0;
+		width: 79%;
+		height: 90%;
+		background: radial-gradient(rgb(255, 201, 85),rgb(221, 170, 62),rgb(160, 118, 27), rgb(170, 122, 17));
+		box-shadow: 1px -1px 1px 1px rgb(236, 197, 100), -1px 1px 1px 1px rgb(81, 62, 13), inset 1px -1px 0 1px rgb(135, 99, 9), inset -1px 1px 0 1px rgb(189, 149, 47);
+	}
+	.buraco
+	{
+		display: none;
+		border-radius: 40px;
+		margin-top: 10%;
+		margin-left: 20%;
+		display: inline-block;
+		height: 88%;
+		width: 20%;
+		background: radial-gradient(rgb(4, 4, 4), rgb(63, 63, 63));
+		box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(49, 36, 1), inset -1px 1px 0 1px rgb(49, 36, 1);
+	}
+	.buraco2
+	{
+		display: none;
+		border-radius: 40px;
+		margin-left: 20%;
+		display: inline-block;
+		height: 88%;
+		width: 20%;
+		background: radial-gradient(rgb(4, 4, 4), rgb(63, 63, 63));
+		box-shadow: 1px -1px 1px 1px rgb(115, 87, 16), -1px 1px 1px 1px rgb(115, 87, 16), inset 1px -1px 0 1px rgb(49, 36, 1), inset -1px 1px 0 1px rgb(49, 36, 1);
+	}
+	
+	/* ----classes criadas diretamente no css --- */
+
+	.fundo-corDiferente
+	{
+		background: radial-gradient(rgb(202, 33, 33) ,rgb(189, 18, 195) , rgb(83, 10, 136),rgb(8, 6, 1) );
+	}
+	.corJanela-diferente
+	{
+		--cor-parte-superior: linear-gradient(90deg,rgb(69, 249, 20),rgb(92, 128, 6));
+		--cor-principal: rgb(173, 219, 129);
+		--cor-detalhe-escuro: rgb(59, 65, 48);
+		--cor-detalhe-escuro2:rgb(112, 125, 92);
+		--cor-detalhe-escuro3: rgb(159, 159, 159);
+		--cor-detalhe-claro2: rgb(232, 255, 205);
+		--cor-detalhe-claro: rgb(168, 255, 155);
+		--cor-letra: rgb(128, 0, 0);
+		--preto: rgb(93, 232, 195);
+		
+	}
+	
+	textarea {
+		line-height: 1.2;
+		font-size: 18px;
+		text-decoration: none;
+	}
+	::selection {
+		color: rgb(0, 0, 0);
+		background: rgb(0, 0, 0);
+	}
+	
+	.move-fundo{
+		animation: colorido 5s ease-in-out infinite;
+	}
+	.roda
+	{
+		border-radius: 100px;
+		animation: roda 5s ease-in-out infinite;
+	}
+	.treme
+	{
+	
+	animation: treme 1s ease-in-out 1;
+	}
+
+	/* -----essa é a sessao de animações---- */
+
+	@keyframes cabo 
+	{
+		0% {
+			top: 0px;
+		}
+	
+	}
+	@keyframes mexeBotao {
+		0%{
+			margin-left: 0px;
+		}
+		50% {
+			margin-left: 10px;
+		}
+		100%{
+			margin-left: 0px;
+		}
+	}
+	@keyframes dialog {
+		0% {
+			left: -200px;
+		}
+		50%{
+			left: 0px;
+		}
+		100% {
+			left: -200px;
+		}
+	}
+}	
